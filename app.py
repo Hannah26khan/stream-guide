@@ -325,6 +325,10 @@ Then, provide an extremely short and breif list of study resources. Provide reso
                                 <div>Excellent app. ⭐⭐⭐⭐✰</div>
                             </div>
                             <div class="review">
+                                <div class="profile-name">Mohd Ammaar khan</div>
+                                <div>This was the most amazing app i have ever tried in my life. ⭐⭐⭐⭐⭐</div>
+                            </div>
+                            <div class="review">
 
                                 <div class="profile-name">Fatima Siddiqui</div>
                                 <div>Provides accurate suggestions but UI is plain ⭐⭐⭐✰✰ </div>
