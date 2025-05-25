@@ -1,9 +1,15 @@
 from flask import Flask, request
 import google.generativeai as genai
 import os
-
+from flask import send_from_directory
 
 app = Flask(__name__)
+
+@app.route('/<filename>')
+def serve_root_files(filename):
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    return send_from_directory(root_dir, filename)
+
 
 @app.route('/')
 def home():
