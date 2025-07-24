@@ -16,18 +16,7 @@ def home():
     return """
     <html>
         <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FMMYJND17S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag()dataLayer.push(arguments);
- 
-
-  gtag('js', new Date());
-
-  gtag('config', 'G-FMMYJND17S');
-</script>
-
+       
  
 
             <title style="color:purple;">CareerGuide</title>
@@ -235,16 +224,7 @@ Then, provide an extremely short and breif list of study resources. Provide reso
             return f"""
             <html>
                 <head>
-                <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FMMYJND17S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag()dataLayer.push(arguments);
-
-  gtag('js', new Date());
-
-  gtag('config', 'G-FMMYJND17S');
-</script>
+                
                     <title>CareerGuide Recommendations</title>
                     <style>
                         body {{
