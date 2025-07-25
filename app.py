@@ -5,14 +5,64 @@ from flask import send_from_directory
 
 app = Flask(__name__)
 
-@app.route('/<filename>')
-def serve_root_files(filename):
-    root_dir = os.path.dirname(os.path.abspath(__file__))
-    return send_from_directory(root_dir, filename)
-
 
 @app.route('/')
-def home():
+def welcome():
+    return """
+    <html>
+         <head>    
+             <title style="color:purple;">CareerGuide</title>
+             <style>
+                 body {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin-top: 20vh;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.3em;
+      margin-bottom: 2em;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-button {
+      background-color: #fff;
+      color: #0078D7;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+    .cta-button:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to StreamGuide 🚀</h1>
+    <p>Not sure which academic stream is right for you? StreamGuide uses AI to help you make the best decision based on your interests and skills.</p>
+    <a href="/quiz" class="cta-button">Take the Quiz Now</a>
+  </div>
+</body>
+</html>
+
+
+@app.route('/quiz')
+def quiz():
     return """
     <html>
         <head>
