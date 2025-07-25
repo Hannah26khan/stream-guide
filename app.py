@@ -11,7 +11,6 @@ def welcome():
     return """
     <html>
          <head>    
-             <title style="color:purple;">CareerGuide</title>
              <style>
                  body {
       background: linear-gradient(to right, #4facfe, #00f2fe);
