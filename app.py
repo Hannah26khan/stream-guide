@@ -58,6 +58,7 @@ def welcome():
   </div>
 </body>
 </html>
+"""
 
 
 @app.route('/quiz')
