@@ -410,6 +410,12 @@ Then, provide an extremely short and breif list of study resources. Provide reso
             </html>
             
             """
+            db.collection("users").add({
+    "interests": user_interests1,
+    "recommendations": recommendations,
+    "timestamp": firestore.SERVER_TIMESTAMP
+})
+
             
             
         db.collection("users").add({
