@@ -5,8 +5,9 @@ from flask import send_from_directory
 import firebase_admin
 from firebase_admin import credentials
 
-cred = credentials.Certificate(""C:\Users\fatim\Desktop\career_counselling_app_backend\firebase_key.json")
+cred = credentials.Certificate("C:\Users\fatim\Desktop\career_counselling_app_backend\firebase_key.json")
 firebase_admin.initialize_app(cred)
+db = firestore.client()
 
 
 app = Flask(__name__)
@@ -268,6 +269,7 @@ Then, provide an extremely short and breif list of study resources. Provide reso
 
     try:
         response = model.generate_content(prompt)
+        
 
         if hasattr(response, 'text'):
             full_response = response.text
@@ -406,7 +408,17 @@ Then, provide an extremely short and breif list of study resources. Provide reso
                     </div>
                 </body>
             </html>
+            
             """
+            
+            
+        db.collection("users").add({
+    "interests": user_interests1,
+    "recommendations": recommendations,
+    "timestamp": firestore.SERVER_TIMESTAMP
+})
+
+
       
         elif hasattr(response, 'prompt_feedback') and response.prompt_feedback.block_reason:
              error_message = f"Content blocked due to: {response.prompt_feedback.block_reason.name}"
@@ -444,11 +456,6 @@ Then, provide an extremely short and breif list of study resources. Provide reso
         </html>
         """, 500
 
-db.collection("users").add({
-    "interests": user_interests1,
-    "recommendations": recommendations,
-    "timestamp": firestore.SERVER_TIMESTAMP
-})
 
 
 if __name__ == '__main__':
