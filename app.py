@@ -4,8 +4,10 @@ import os
 from flask import send_from_directory
 import firebase_admin
 from firebase_admin import credentials
+from firebase_admin import firestore
 
-cred = credentials.Certificate("C:\Users\fatim\Desktop\career_counselling_app_backend\firebase_key.json")
+cred_path = os.getenv(FIREBASE_CREDENTIAL_PATH)
+cred = credentials.Certificate(cred_path)
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
@@ -418,12 +420,6 @@ Then, provide an extremely short and breif list of study resources. Provide reso
 
             
             
-        db.collection("users").add({
-    "interests": user_interests1,
-    "recommendations": recommendations,
-    "timestamp": firestore.SERVER_TIMESTAMP
-})
-
 
       
         elif hasattr(response, 'prompt_feedback') and response.prompt_feedback.block_reason:
