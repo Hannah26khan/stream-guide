@@ -2,6 +2,12 @@ from flask import Flask, request
 import google.generativeai as genai
 import os
 from flask import send_from_directory
+import firebase_admin
+from firebase_admin import credentials
+
+cred = credentials.Certificate(""C:\Users\fatim\Desktop\career_counselling_app_backend\firebase_key.json")
+firebase_admin.initialize_app(cred)
+
 
 app = Flask(__name__)
 
