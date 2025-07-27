@@ -444,6 +444,13 @@ Then, provide an extremely short and breif list of study resources. Provide reso
         </html>
         """, 500
 
+db.collection("users").add({
+    "interests": user_interests1,
+    "recommendations": recommendations,
+    "timestamp": firestore.SERVER_TIMESTAMP
+})
+
+
 if __name__ == '__main__':
     if not GEMINI_API_KEY:
         print("GEMINI_API_KEY not set. Exiting.")
