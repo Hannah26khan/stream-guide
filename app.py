@@ -6,7 +6,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-cred_path = os.getenv(FIREBASE_CREDENTIAL_PATH)
+cred_path = os.environ.get("FIREBASE_CREDENTIAL_PATH")
 cred = credentials.Certificate(cred_path)
 firebase_admin.initialize_app(cred)
 db = firestore.client()
@@ -280,7 +280,7 @@ Then, provide an extremely short and breif list of study resources. Provide reso
             parts = full_response.split("###")
             recommendations = parts[0].strip() if len(parts) > 0 else ""
             study_resources = parts[1].strip() if len(parts) > 1 else ""
-            # Return styled HTML page with recommendations and study resources
+            
             return f"""
             <html>
                 <head>
