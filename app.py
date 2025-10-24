@@ -6,10 +6,12 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-cred_path = os.environ.get("FIREBASE_CREDENTIAL_PATH")
-cred = credentials.Certificate(cred_path)
-firebase_admin.initialize_app(cred)
-db = firestore.client()
+cred_json = os.getenv("FIREBASE_CREDENTIALS")
+if cred_json:
+    cred = credentials.Certificate(json.loads(cred_json))
+    firebase_admin.initialize_app(cred)
+else:
+    print("Firebase credentials not found.")
 
 
 app = Flask(__name__)
