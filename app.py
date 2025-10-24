@@ -25,6 +25,19 @@ def welcome():
          <head>   
          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741909385880535"
      crossorigin="anonymous"></script>
+<!-- ad unit 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1741909385880535"
+     data-ad-slot="3048791621"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741909385880535"
+     crossorigin="anonymous"></script>
              <style>
                  body {
       background: linear-gradient(to right, #4facfe, #00f2fe);
@@ -80,6 +93,18 @@ def quiz():
     return """
     <html>
         <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741909385880535"
+     crossorigin="anonymous"></script>
+<!-- ad unit 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1741909385880535"
+     data-ad-slot="3048791621"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
        
  
 
@@ -289,8 +314,25 @@ Then, provide an extremely short and breif list of study resources. Provide reso
             return f"""
             <html>
                 <head>
+
+
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741909385880535"
      crossorigin="anonymous"></script>
+<!-- ad unit 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1741909385880535"
+     data-ad-slot="3048791621"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+         
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741909385880535"
+     crossorigin="anonymous"></script>
+
+     
                 
                     <title>CareerGuide Recommendations</title>
                     <style>
