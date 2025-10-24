@@ -19,7 +19,9 @@ app = Flask(__name__)
 def welcome():
     return """
     <html>
-         <head>    
+         <head>   
+         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741909385880535"
+     crossorigin="anonymous"></script>
              <style>
                  body {
       background: linear-gradient(to right, #4facfe, #00f2fe);
@@ -284,6 +286,8 @@ Then, provide an extremely short and breif list of study resources. Provide reso
             return f"""
             <html>
                 <head>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741909385880535"
+     crossorigin="anonymous"></script>
                 
                     <title>CareerGuide Recommendations</title>
                     <style>
