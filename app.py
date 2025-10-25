@@ -311,7 +311,7 @@ Then, provide an extremely short and breif list of study resources. Provide reso
             recommendations = parts[0].strip() if len(parts) > 0 else ""
             study_resources = parts[1].strip() if len(parts) > 1 else ""
             
-            return f"""
+            return f'''
             <html>
                 <head>
 
@@ -460,7 +460,7 @@ Then, provide an extremely short and breif list of study resources. Provide reso
                 </body>
             </html>
             
-            """
+            '''
             db.collection("users").add({
     "interests": user_interests1,
     "recommendations": recommendations,
