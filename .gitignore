@@ -1,7 +1,7 @@
 __pycache__/
 *.pyc
 .env
-venv
+venv/
 firebase_key.json
-.vscode
+.vscode/
 googlee315fc5d654ab97b.html
