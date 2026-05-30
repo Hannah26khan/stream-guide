@@ -79,7 +79,7 @@ def welcome():
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to StreamGuide 🚀</h1>
+    <h1>Welcome to StreamGuide </h1>
     <p>Not sure which academic stream is right for you? StreamGuide uses AI to help you make the best decision based on your interests and skills.</p>
     <a href="/quiz" class="cta-button">Take the Quiz Now</a>
   </div>

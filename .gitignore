@@ -1,7 +1,7 @@
 __pycache__/
 *.pyc
 .env
-venv/
-*.db
-*.sqlite3
+venv
 firebase_key.json
+.vscode
+googlee315fc5d654ab97b.html
